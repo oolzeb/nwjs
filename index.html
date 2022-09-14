@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>nwjs</title>
+	<style type="text/css">
+		h1 {margin: auto;}
+	</style>
+</head>
+<body>
+	<h1>
+	<img src="newjeans.gif">
+    </h1>
+   
+  
+   <button id="attentionBut">attention</button>
+	<audio id="attentionSnd" src="attention.mp3"></audio>
+
+	<button id="hypeboyBut">hypeboy</button>
+	<audio id="hypeboySnd" src="hypeboy.mp3"></audio>
+
+	<button id="cookieBut">cookie</button>
+	<audio id="cookieSnd" src="cookie.mp3"></audio>
+
+	<button id="stopBut">stop</button>
+	<script type="text/javascript">
+		hypeboyBut.onclick = function()
+		      {hypeboySnd.play();}
+		cookieBut.onclick = function()
+		      {cookieSnd.play();}
+		attentionBut.onclick = function()
+		      {attentionSnd.play();}
+		stopBut.onclick = function(){
+			hypeboySnd.pause();
+			cookieSnd.pause();
+			attentionSnd.pause();
+
+		}
+
+    </script>
+     
+
+</body>
+</html>
